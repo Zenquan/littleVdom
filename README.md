@@ -30,12 +30,10 @@
 第三种方案：
 - 1.state数据
 - 2.jsx模板
-- 3.数据+模板结合，生成虚拟DOM（虚拟DOM是一个js对象，用了描述真实DOM）损耗了性能
-【'div', {id: 'abc'}, ['span', {}, 'hello world']
+- 3.数据+模板结合，生成虚拟DOM（虚拟DOM是一个js对象，用了描述真实DOM）损耗了性能['div', {id: 'abc'}, ['span', {}, 'hello world']
 - 4.用虚拟DOM的结构生成真实的DOM，来显示`<div id='abc'><span>hello world</span></div>`
 - 5.state发生改变
-- 6.生成新的虚拟DOM
-【'div', {id: 'abc'}, ['span', {}, 'bye bye']】
+- 6.生成新的虚拟DOM['div', {id: 'abc'}, ['span', {}, 'bye bye']]
 - 7.比较原始虚拟DOM和新的虚拟DOM的叙别，找到区别的内容
 - 8.直接操作DOM，改变span的内容。
 
